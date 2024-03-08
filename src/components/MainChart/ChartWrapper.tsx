@@ -20,16 +20,16 @@ export default async function ChartWrapper() {
   });
   
   return (
-    <div className='space-y-8'>
+    <div>
       <CoinTitle 
         url={coinData.image.small}
         name={coinData.name}
         symbol={coinData.symbol}
         ranking={coinData.market_cap_rank}
-        className='flex lg:hidden'
+        className='flex lg:hidden mb-6'
       />
 
-      <div className='card min-h-[600px] flex flex-col gap-4'>
+      <div className='card flex flex-col gap-4'>
         <CoinTitle 
           url={coinData.image.small}
           name={coinData.name}
