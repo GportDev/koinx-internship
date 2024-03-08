@@ -24,8 +24,21 @@
   "rules": {
     "linebreak-style": ["warn", "unix"],
     "quotes": ["error", "single"],
+    "semi": ["error", "always"],
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
     "react/react-in-jsx-scope": "off"
+  },
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx"],
+      "rules": {
+        "@typescript-eslint/no-unused-vars": "off"
+      }
+    }
+  ],
+  "globals": {
+    "module": true,
+    "process": true
   }
 }
