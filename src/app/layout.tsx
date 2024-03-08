@@ -23,7 +23,7 @@ export default function RootLayout({
     <html lang='en'>
       <body className={`bg-primary ${inter.className}`}>
         <Header />
-        <main className='w-[clamp(320px,90%,1200px)] mx-auto'>{children}</main>
+        <main className='mx-auto w-[clamp(320px,90%,1200px)]'>{children}</main>
       </body>
     </html>
   );

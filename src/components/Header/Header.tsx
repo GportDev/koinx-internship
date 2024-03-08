@@ -8,7 +8,7 @@ import MobileMenu from './MobileMenu';
 export default function Header() {
   return (
     <header className='bg-white shadow-sm'>
-      <div className='flex items-center justify-between py-4 w-[clamp(320px,90%,1200px)] mx-auto'>
+      <div className='mx-auto flex w-[clamp(320px,90%,1200px)] items-center justify-between py-4'>
         <Image src={'/logo.png'} alt='logo' width={100} height={100} />
         <div className='hidden lg:block'>
           <nav className='flex items-center gap-4 font-bold'>
